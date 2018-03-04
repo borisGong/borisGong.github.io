@@ -687,6 +687,7 @@ pre code {
 .intro-header .page-heading {
   padding: 85px 0 55px;
   color: white;
+  font-family: ’‘
 }
 @media only screen and (min-width: 768px) {
   .intro-header .site-heading,
