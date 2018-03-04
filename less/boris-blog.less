@@ -412,17 +412,17 @@ pre code{
 	.site-heading,
 	.post-heading,
 	.page-heading {
-		padding: 85px 0 55px;
-		color: white;
+		padding: 225px 0 55px;
+		color: white; 
 		@media only screen and (min-width: 768px) {
-			padding: 150px 0;
+			padding: 225px 0;
 		}
 	}
 	// masterialize
 	.site-heading{
-		padding: 95px 0 70px;
+		padding: 225px 0 55px; 
 		@media only screen and (min-width: 768px) {
-			padding: 150px 0;
+			padding: 225px 0;
 		}
 	}
 	.site-heading,
@@ -489,19 +489,42 @@ pre code{
 
 // Post Preview Pages (Home Page)
 
-.post-preview {
+.post-preview {  
+	box-shadow:1px 1px 5px 3px #D1D1D1;
+	border-radius: 8px;
+	float: left;
+	overflow: hidden; 
+	width: 395px;
+	height: 311px;
+	margin-left: 40px;
+	margin-top: 40px;
+	position: relative;
 	> a {
-		color: @gray-dark;
+		color: @gray-dark; 
 		&:hover,
 		&:focus {
 			text-decoration: none;
 			color: @brand-primary;
 		}
+		> .post-image{
+			min-height: 180px;
+			position: relative;
+			&:before {
+				position: absolute;
+				width: 100%;
+				top:0; 
+				z-index: 1;
+				background-color: #7b6767;
+				content: ''; 
+				opacity: 0.5;
+			} 
+		}
 		> .post-title {
 			font-size: 21px;
 			line-height: 1.3;
-			margin-top: 30px;
+			margin-top: 20px;
 			margin-bottom: 8px;
+			margin-left: 20px;
 		}
 		> .post-subtitle {
 			font-size: 15px;
@@ -517,6 +540,8 @@ pre code{
 		font-size: 16px;
 		font-style: italic;
 		margin-top: 0;
+		margin-left: 20px;
+		margin-bottom: 15px;
 		> a {
 			text-decoration: none;
 			color: @gray-dark;
@@ -526,6 +551,9 @@ pre code{
 				text-decoration: underline;
 			}
 		}
+	}
+	&:hover > a > .post-image:before{
+		animation:previewHover 400ms linear forwards;
 	}
 	@media only screen and (min-width: 768px) {
 		> a {
@@ -542,13 +570,21 @@ pre code{
 			font-size: 18px;
 		}
 	}
-}
+	@keyframes previewHover{
+		0%{opacity: 0.1;bottom: 100%}
+		30%{opacity: 0.3;bottom: 65%}
+		65%{opacity: 0.4;bottom: 20%}
+		100% {opacity: 0.5;bottom: 0}
+	}
+}  
+
 
 // Hux add home-page post-content-preview
 .post-content-preview{
     font-size: 13px;
     font-style: italic;
-    color:#a3a3a3;
+	color:#a3a3a3;
+	margin-left: 20px;
     &:hover{
         color: @brand-primary;
     }
@@ -579,6 +615,7 @@ pre code{
 footer {
 	font-size: 20px;
 	padding: 50px 0 65px;
+	background-color: #544646;
 	.list-inline {
 		margin: 0;
 		padding: 0;
@@ -848,7 +885,7 @@ img::-moz-selection {
 		.sans-serif;
 	}
 	.post-preview {
-		position: relative;
+		position: relative; 
 		> a {
 			.post-title{
 				font-size: 16px;
