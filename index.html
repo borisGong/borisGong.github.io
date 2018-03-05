@@ -5,8 +5,8 @@ description: "一生想做充满文艺情怀的技术极客"
 
 {% for post in paginator.posts %}
 <div class="post-preview">
-    <a href="{{ post.url | prepend: site.baseurl }}">
-        <div class="post-image" style="background-image:url('{{post.header-img}}');background-size: contain;">
+    <a href="{{ post.worksUrl | prepend: site.baseurl }}">
+        <div class="post-image" style="background-image:url('{{post.thumbnail}}');background-size: contain;">
         </div>
         <h2 class="post-title">
             {{ post.title }}
@@ -37,3 +37,5 @@ description: "一生想做充满文艺情怀的技术极客"
     {% endif %}
 </ul>
 {% endif %}
+
+<script src="js/index.js"></script>

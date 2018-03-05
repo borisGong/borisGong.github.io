@@ -1,0 +1,37 @@
+html,body{
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    background-color:lightblue;
+} 
+.wrap{
+    width: 100%;
+    height: 100%;
+    position: relative;
+    overflow: hidden;
+    color: #9C27B0;
+    font-weight: 500;
+}
+ul{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+.container{
+    position: relative;
+    margin: 0;
+    padding: 0;
+    top: 50%;
+    left: 50%;
+    width: 0;
+    height: 0;
+}
+.item{
+    position: absolute;
+}
+.item div{
+    white-space: nowrap;
+    margin: 0;
+    padding: 0;
+    font-size: 0;
+}

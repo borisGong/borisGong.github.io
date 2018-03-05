@@ -1,0 +1,95 @@
+html{
+    height: 100%;
+}
+body {
+    background: linear-gradient(to right, rgba(102, 75, 129, 1), rgba(65, 63, 189, 0.7));
+    /* 标准的语法 */
+    margin: 0px; 
+    height: 100%;
+}
+.cursor_point{
+    cursor: pointer
+}
+.app_container{
+    color:white;
+    height:100%;
+}
+
+.app_menu{
+    float:left;
+    min-width: 80px;
+    margin-right: 5px; 
+    height: 100%;
+    background-color: rgba(61, 25, 71, 0.2);
+    border-radius: 10px;
+}
+.menu_btn{
+    height: 40px;
+    line-height: 40px;
+    padding:1px;
+    margin:10px 5px 0px 0px;
+    border-radius: 0px 10px 10px 0px;
+    background-color: rgba(40, 15, 48, 0.2);
+    border: 1px solid rgba(40, 15, 48, 0.6);
+    box-shadow: 0 0 10px  rgba(40, 15, 48, 0.6);
+    text-align: left;
+}
+
+.app_content{
+    overflow: hidden;
+    height: 100%;
+    background-color: rgba(61, 25, 71, 0.2);
+    border-radius: 10px;
+}
+.toolbar{
+    overflow: hidden;
+    height: 40px;
+    line-height: 40px;
+    padding: 0px 10px 0px 10px;
+    margin:0px 0px 5px 0px;
+    background-color: rgba(45, 14, 54, 0.2);
+}
+.tool{
+    width:100px; 
+    float:right;
+    margin-right: 10px;
+    background-color: rgba(45, 14, 54, 1);
+    text-align: center;
+    border-radius: 10px 10px 0px 0px;
+}
+.workpanel{ 
+    background-color: rgba(61, 25, 71, 0.2);
+    height: 100%;
+    overflow: auto;
+}
+.workpanel_conent{
+    padding: 50px 20px 100px 20px;
+}
+.box{
+    float: left;
+    width: 100px;
+    height: 100px;
+    line-height: 100px;
+    text-align: center;
+    background-color: rgba(68, 6, 83, 1);
+    box-shadow: 0px 0px 12px  rgba(68, 6, 83, 1);
+    border: 1px solid #31063A;
+    margin: 0px 10px 10px 0px;     
+}
+.box_target{
+    box-shadow: 0px 0px 30px  rgb(83, 37, 6);
+}
+
+.removed-box{
+    animation: 200ms;
+    -moz-animation:Removebox 200ms; /* Firefox */
+    -webkit-animation:Removebox 200ms; /* Safari and Chrome */
+    -o-animation:Removebox 200ms; /* Opera */
+}
+@keyframes Removebox{
+    0%{ transform:scale(1,1) }
+    30%{ transform:scale(0.7,0.7)}
+    60%{ transform:scale(0.4,0.4)}
+    90%{ transform:scale(0.1,0.1)}
+}
+

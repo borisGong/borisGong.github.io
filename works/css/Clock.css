@@ -1,0 +1,36 @@
+html ,body{
+    width:100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    background-repeat:no-repeat;
+    background-size: cover;
+    background-image: url(
+         ../Img/background_08.jpg
+    )
+}
+#drawDial{
+    position: absolute;
+    top: 80px;
+    left: calc(75% - 200px); 
+    background-color: transparent;
+    z-index: 100;
+} 
+#backGround{ 
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: transparent;
+}
+#fontUp{
+    position: absolute;
+    top: 200px;
+    left: 150px; 
+    color: white; 
+}
+#fontDown{
+    position: absolute;
+    top: 260px;
+    left: 230px; 
+    color: white; 
+}

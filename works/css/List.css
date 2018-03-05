@@ -1,0 +1,101 @@
+body{
+    background: #C33764;
+    /* fallback for old browsers */
+       background: -webkit-linear-gradient(to right, #FF8E96, #FFBC87);
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #FF8E96, #FFBC87);
+}
+.content{
+    width:600px;
+    position: absolute;
+    top: 20%;
+    left: calc(50% - 300px);
+    display: block;      
+}
+.container{ 
+
+    color: white; 
+    background-color: rgba(0, 0, 0, 0.15);
+    border-radius: 10px;
+    -webkit-box-shadow: 10px 10px 60px 10px rgba(0,0,0,0.5);
+    -moz-box-shadow: 10px 10px 60px 10px rgba(0,0,0,0.5);
+    box-shadow: 10px 10px 60px 10px rgba(0,0,0,0.5);  
+}
+
+.header{
+    height: 70px;
+    line-height: 70px;
+    font-size: 30px;
+    background-color: rgba(50, 51, 75, 0.5);
+    text-align: center;
+}
+.row_container{
+    font-size:20px;
+}
+
+.row{
+    height: 50px;
+    line-height: 50px;
+    background-color: rgba(95, 94, 158, 0.35);
+    margin-top: 5px;
+}
+
+.row:hover{
+    background-color: #ECC9AB;
+}
+
+.text{
+    float:left;
+    margin-left: 10px;
+}
+
+.finish_btn{
+    float: right;
+    width:25px;
+    height: 25px;
+    border: 2px solid white;
+    border-radius: 20px;
+    margin-top: 14px;
+    margin-right: 10px;
+    position: relative;
+    cursor: pointer;
+}
+.finish_btn:after{
+    content: "";
+    width: 15px;
+    height: 3px;
+    display: block;
+    color: white;
+    position: absolute;
+    bottom: 11px;
+    right: 5px;
+    background-color: white;
+    transform: rotate(-45deg); 
+}
+
+.finish_btn::before{
+    content: "";
+    width: 15px;
+    height: 3px;
+    display: block;
+    color: white;
+    position: absolute;
+    bottom: 11px;
+    right: 5px;
+    background-color: white;
+    transform: rotate(45deg);  
+}
+
+.finish_btn_click{
+    animation: 500ms;
+    -moz-animation: removeItem 500ms;
+    -webkit-animation: removeItem 500ms;
+    -o-animation: removeItem 500ms;
+    position: relative;
+}
+
+@keyframes removeItem{
+    0%{left: 0px}
+    50%{left:50px;}
+    100%{left:0px;display: none;}
+}

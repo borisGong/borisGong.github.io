@@ -1,0 +1,158 @@
+html,body{
+    height: 100%;   
+    padding: 0px;
+    margin: 0px;
+}
+ul{
+    margin: 0px;
+    padding: 0px;
+}
+li{
+    list-style-type: none;
+    color: #AAAAAA;
+    cursor: point;
+}
+ul li{
+    padding: 7px 0px;
+}
+ul li:hover{
+    position: relative;
+    background-color: rgb(139, 137, 19);
+}
+li a{
+    color: #AAAAAA;
+    text-decoration: none;
+}
+.nav
+{
+    background-color: rgb(26, 19, 19);
+    color: #AAAAAA;
+    position: absolute;
+    width:100%;
+    min-height: 100%;
+    top: 0px;
+    left: 0px;
+}
+.button{
+    width: 100%;
+    display: block;
+    text-transform: uppercase;
+    /* border: 1px solid red; */
+    height: 30px;
+    line-height: 30px;
+    margin-top: 5px;
+}
+.menu,.Dashboard,.Reports,.Admin,.YourProfile{
+    width: 40px;
+    height: 20px;
+    display: inline-block;
+    position: relative;
+    cursor: pointer;
+    /* top: 0px; */
+    /* left: 0px; */
+}
+
+.menu:before{
+    content: '';
+    height: 4px;
+    width: 22px;
+    background: #AAAAAA;
+    border-radius: 4px;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    display: block;
+    position: absolute;
+    top: 5px;
+    left: 5px;
+    box-shadow: 0 8px #AAAAAA, 0 16px #AAAAAA;
+    /* -webkit-box-shadow: 0 12px #333, 0 24px #333; */
+}
+.Dashboard:before{
+    content: '';
+    width: 0;
+    height: 0;
+    display: block;
+    border-width: 10px 10px 0;
+    border-style: solid;
+    border-color: #AAAAAA transparent transparent;
+    position: absolute;
+    top: 10px;
+    left: 5px; 
+}
+.Reports::before{
+    content: '';
+    height: 4px;
+    width: 22px;
+    background: #AAAAAA;
+    border-radius: 4px;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    display: block;
+    position: absolute;
+    top: 5px;
+    left: 5px;
+    box-shadow: 0 8px #AAAAAA, 0 16px #AAAAAA;
+    /* -webkit-box-shadow: 0 12px #333, 0 24px #333; */
+}
+.Admin::before{
+    content: '';
+    width: 0;
+    height: 0;
+    display: block;
+    border-width: 10px 10px 0;
+    border-style: solid;
+    border-color: #AAAAAA transparent transparent;
+    position: absolute;
+    top: 10px;
+    left: 5px; 
+}
+.YourProfile::before{
+    content: '';
+    height: 4px;
+    width: 22px;
+    background: #AAAAAA;
+    border-radius: 4px;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    display: block;
+    position: absolute;
+    top: 5px;
+    left: 5px;
+    box-shadow: 0 8px #AAAAAA, 0 16px #AAAAAA;
+    /* -webkit-box-shadow: 0 12px #333, 0 24px #333; */
+}
+.panel{
+    background-color: #29241f;
+    position: relative;
+    margin-left: 2.2rem;
+    transition: margin 200ms;
+    min-height: 100%;
+}
+.panel_extend{
+    margin-left: 9rem;
+}
+
+header{
+    height: 40px;
+    background-color: rgb(50, 40, 51);
+}
+aside{
+    color: #AAAAAA;
+    float: right;
+    margin-right: 40px;
+    margin-top: 10px;
+}
+
+.people::before{
+    content: '';
+    width: 0;
+    height: 0;
+    display: block;
+    border-width: 10px 10px 0;
+    border-style: solid;
+    border-color: #AAAAAA transparent transparent;
+    position: absolute;
+    top: -15px;
+    /* left: 5px; */
+    right: -30px;
+}

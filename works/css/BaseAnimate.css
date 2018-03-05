@@ -1,0 +1,83 @@
+html body{
+    height: 100%;
+    background-image: url(../img/background_09.jpg);
+    color:darkred;
+}
+.container{
+    width:500px;
+    margin: 0 auto;
+}
+h2{
+    margin: 0;
+}
+.box{
+    display: inline-block;
+    width:80px;
+    height: 80px;
+    position: relative;
+    top:0;
+    left:0;
+    border-radius: 20px;
+    background-color: #9E9E9E;
+    border: 4px solid #607D8B;
+    margin: 0 0 0 100px;
+    /* 开启、过程时长、运动曲线 */
+    transition:all 0.5s ease-in-out;
+    -webkit-transition:all 0.5s ease-in-out;
+    -moz-transition:all 0.5s ease-in-out;
+    -o-transition:all 0.5s ease-in-out;
+}
+
+.rotate_r:hover{
+    transform: rotate(360deg);
+    -ms-transform:rotate(360deg); /* IE 9 */
+    -moz-transform:rotate(360deg); /* Firefox */
+    -webkit-transform:rotate(360deg); /* Safari and Chrome */
+    -o-transform:rotate(360deg); /* Opera */
+}
+.rotate_l:hover{
+    transform: rotate(-360deg);
+    -ms-transform:rotate(-360deg); /* IE 9 */
+    -moz-transform:rotate(-360deg); /* Firefox */
+    -webkit-transform:rotate(-360deg); /* Safari and Chrome */
+    -o-transform:rotate(-360deg); /* Opera */
+}
+.scale_big:hover{
+    transform: scale(2,2);
+} 
+.scale_smail:hover{
+    transform: scale(0,0);
+}
+.skew_x:hover{
+    transform: skew(50deg,20deg);
+    -ms-transform: skew(50deg,20deg);	/* IE 9 */
+    -webkit-transform: skew(50deg,20deg);	/* Safari and Chrome */
+    -o-transform: skew(50deg,20deg);	/* Opera */
+    -moz-transform: skew(50deg,20deg);
+}
+.skew_y:hover{
+    transform: skew(20deg,50deg);
+    -ms-transform: skew(20deg,50deg);	/* IE 9 */
+    -webkit-transform: skew(20deg,50deg);	/* Safari and Chrome */
+    -o-transform: skew(20deg,50deg);	/* Opera */
+    -moz-transform: skew(20deg,50deg);
+}
+.translate_x:hover{
+    transform: translateY(50px)
+}
+.translate_y:hover{
+    transform: translateX(50px)
+}
+.width_scale:hover{
+    margin-right: 75px;
+    width: 5px;
+    left: 35px;
+}
+
+.height_scale:hover{
+    /*先变形*/
+    margin-bottom: 75px;
+    height: 5px;
+    /*后移位置*/
+    top: 37px;
+}

@@ -404,6 +404,7 @@ pre code {
 }
 .postlist-container {
   margin-bottom: 15px;
+  overflow: hidden;
 }
 .post-container a {
   color: #337ab7;
@@ -789,6 +790,7 @@ pre code {
   margin-left: 40px;
   margin-top: 40px;
   position: relative;
+  background-color: white;
 }
 .post-preview > a {
   color: #404040;
