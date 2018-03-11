@@ -1,0 +1,106 @@
+---
+layout:     post
+title:      "ES"
+subtitle:   " " 
+author:     "Boris"
+header-img: "img/post-bg-2015.jpg"
+thumbnail: "img/Post_Img/post-bg-2015.jpg"
+catalog: true 
+tags:
+    - 生活
+---
+
+> “Yeah It's on. ”
+
+
+## Es6 基础知识学习
+
+
+1. ## let 和 const命令
+
+2. ## 模板字符串
+
+> Base Concept
+(1) 模板字符串 : 使用反撇号代替普通字符串的的引号和单引号
+(2) 模板占位 
+
+> Function ：
+(1) 多行书写
+(2) 能keep空格，缩进等文本格式
+(3) 模板套构
+(4) 嵌入变量和表达式 
+
+> Improvement
+(1) 不能自动转义特殊字符
+(2) 不能替代模板引擎的作用,由于内建循环，条件等语法\
+
+
+3. ## 标签模板
+
+> Base Concept：
+(1)标签函数：字符串模板的衍生工具,处理字符串模板
+
+> Function
+(1) 过滤Html字符串
+(2) 多语言转换
+
+>Improvement
+
+3. ## 正则的扩展
+
+2. ## 数值的扩展
+
+2. ## 函数的扩展
+
+2. ## 数组的扩展
+
+2. ## 对象的扩展
+
+2. ## Symbol
+>Base Concept
+(1) Symbol实例：通过Symbol函数生成的值(注意Symbol是原始类型，所以不能称为对象，是称为值，同时Symbol函数不能使用new)
+(2) 魔术字符串
+>The Original Designed Purpose
+防止属性名的冲突，保证每个属性名的独一无二(ES6之后对象的属性名类型由原来的只是字符串类型变成了既可以是字符串类型又可以是Symbol类型)
+>Function
+(1) 通过属性名的方式当作一种标识
+(2) 定义一组常量，保证这些常量都是不相等的
+
+
+
+2. ## Set和Map数据结构
+
+2. ## Proxy
+
+2. ## Reflect 
+
+2. ## Promise对象
+
+2. ## Iterator 和 for 
+
+>Base Concept
+(1)Iterator: 一种为各种不同的数据结构提供统一的访问机制
+>Function
+(1)为各种数据结构通过统一，简便的访问接口
+(2)是的数据结构的成员按照次序排序（不理解）
+(3)for...of...的内部构建依赖Iterator
+
+
+2. ## Generator 函数的异步应用
+
+2. ## async 函数
+
+2. ## class的基本用法
+
+2. ##class的继承
+
+2. ## Decorator
+
+2. ## Module的语法
+
+2. ## Module的加载实现
+
+
+
+
+
