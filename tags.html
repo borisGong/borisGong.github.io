@@ -1,20 +1,38 @@
----
+ ---
 title: Tags
 layout: default
 description: keep hungry keep foolish
 header-img: "img/tag-wr.jpg"
 header-img1: "img/QJ6782112308.jpg"
+header-img2: "img/1111.jpg"
 ---
 
-<!-- Page Header --> 
-     <div style="text-align: center;width: 100%;">
-          <div>
-				<div style="display:inline-block;width:42%;height:600px;background-repeat: no-repeat;background-image: url('{{ site.baseurl }}/{% if page.header-img %}{{ page.header-img }}{% else %}{{ site.header-img }}{% endif %}')">
-				
-				</div>
-				<div style="display:inline-block;width:42%;height:600px;background-repeat: no-repeat;background-image: url('{{ site.baseurl }}/{% if page.header-img1 %}{{ page.header-img1 }}{% else %}{{ site.header-img1 }}{% endif %}')">
-				<div>
-          </div>
-     </div>
+<div style="text-align: center;width: 100%;">
+  <div id="picOne">
+			<div style="display:inline-block;width:42%;height:600px;background-repeat: no-repeat;background-image: url('{{ site.baseurl }}/{% if page.header-img %}{{ page.header-img }}{% else %}{{ site.header-img }}{% endif %}')">
 
- 
+			</div>
+			<div style="display:inline-block;width:42%;height:600px;background-repeat: no-repeat;background-image: url('{{ site.baseurl }}/{% if page.header-img1 %}{{ page.header-img1 }}{% else %}{{ site.header-img1 }}{% endif %}')">
+			<div>
+  </div>
+    <div id="picTwo">
+	<div style="display:inline-block;width:42%;height:600px;background-repeat: no-repeat;background-image: url('{{ site.baseurl }}/{% if page.header-img2 %}{{ page.header-img2 }}{% else %}{{ site.header-img2 }}{% endif %}')">
+   </div>
+</div>
+
+<script>
+function switchPic() {
+    setInterval(function(){
+	var now = new Date(),hour = now.getHours()
+	if(hour < 12){
+	    $("#picOne").css('display','block');
+	    $("#picTwo").css('display','none');
+	}
+	else{
+	    $("#picOne").css('display','none');
+	    $("#picTwo").css('display','block');
+	}
+    }, 3000);
+}
+switchPic()
+</script>
